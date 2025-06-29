@@ -30,6 +30,7 @@ l.reverse()       # inverse la liste
 l.sort()          # trie sur place
 
 ____ array ____
+from array import array
 
 # Déclaration : tableau d'entiers signés
 a = array("i", [1, 2, 3])  # "i" = type entier
