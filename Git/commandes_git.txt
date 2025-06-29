@@ -1,0 +1,65 @@
+# Commandes git utiles
+
+## Initialisation et configuration
+- `git init`  
+  Initialise un nouveau dépôt git dans le dossier courant.
+
+- `git clone <url>`  
+  Clone un dépôt distant sur ton ordinateur.
+
+## États des fichiers
+- `git status`  
+  Affiche l’état des fichiers (modifiés, non suivis, etc.).
+
+## Ajouter et enregistrer des modifications
+- `git add <fichier>`  
+  Ajoute un fichier à la zone de staging (préparation du commit).
+
+- `git add .`  
+  Ajoute tous les fichiers modifiés à la zone de staging.
+
+- `git commit -m "Message"`  
+  Enregistre les modifications ajoutées avec un message.
+
+## Synchronisation avec le dépôt distant
+- `git pull`  
+  Récupère et fusionne les modifications du dépôt distant.
+
+- `git push`  
+  Envoie tes commits sur le dépôt distant.
+
+## Historique
+- `git log`  
+  Affiche l’historique des commits.
+
+## Branches
+- `git branch`  
+  Liste les branches locales.
+
+- `git checkout <branche>`  
+  Change de branche.
+
+- `git checkout -b <nouvelle-branche>`  
+  Crée et bascule sur une nouvelle branche.
+
+- `git merge <branche>`  
+  Fusionne la branche indiquée dans la branche courante.
+
+## Autres commandes utiles
+- `git diff`  
+  Affiche les différences entre les fichiers modifiés et le dernier commit.
+
+- `git rm <fichier>`  
+  Supprime un fichier du dépôt.
+
+- `git mv <ancien> <nouveau>`  
+  Renomme ou déplace un fichier.
+
+- `git remote -v`  
+  Affiche les dépôts distants configurés.
+
+- `git stash`  
+  Met de côté temporairement des modifications non committées.
+
+---
+Astuce : utilise toujours `git status` pour vérifier où tu en es !
