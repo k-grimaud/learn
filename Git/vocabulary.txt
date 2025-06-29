@@ -1,0 +1,24 @@
+_______ git _______
+
+Repository (repo) : dossier versionné par git
+Clone : copier un dépôt distant en local
+Commit : enregistrement d’un ensemble de modifications
+Branch (branche) : version parallèle d’un projet
+Merge : fusionner deux branches
+Conflict : désaccord entre changements lors d’une fusion
+Staging area (index) : zone où l’on prépare les fichiers avant commit (git add)
+Remote : dépôt distant (ex : sur GitHub)
+Pull : récupérer les modifications du dépôt distant
+Push : envoyer tes commits vers le dépôt distant
+Checkout : changer de branche ou de version
+Rebase : réécrire l’historique des commits pour les integrer autrement
+HEAD : pointeur sur le commit courant
+
+_______ gitub _______
+
+Fork : copier un dépôt sur ton compte GitHub
+Pull request (PR) : proposition de changements à integrer dans un dépôt
+Issue : ticket de suivi (bug, idée, tâche…)
+Actions : automatisations (CI/CD)
+README : fichier d’accueil/documentation d’un projet
+.gitignore : liste des fichiers à ignorer par git
