@@ -1,0 +1,121 @@
+
+____ listes (list) ____
+
+l = [1, 2, 3]
+l[0]        # Indexation
+l[1:3]      # Slicing
+len(l)      # Taille
+3 in l      # Appartenance
+a, b, c = l # Déballage
+[x*2 for x in l]  # Compréhension
+
+# fonctions 
+len(l) – longueur
+sum(l) – somme
+min(l), max(l) – min / max
+sorted(l) – nouvelle liste triée
+enumerate(l) – boucle avec index
+list(iterable)  # conversion
+zip(l1, l2) – itérer plusieurs listes
+
+l.append(x)       # ajoute x à la fin
+l.insert(i, x)    # insère x à l'indice i
+l.extend([x, y])  # ajoute plusieurs éléments
+l.pop()           # retire le dernier élément
+l.remove(x)       # retire la première occurrence de x
+l.clear()         # vide la liste
+l.index(x)        # renvoie l'indice de x
+l.count(x)        # compte les occurrences de x
+l.reverse()       # inverse la liste
+l.sort()          # trie sur place
+
+____ array ____
+
+# Déclaration : tableau d'entiers signés
+a = array("i", [1, 2, 3])  # "i" = type entier
+
+# Fonctions intégrées
+len(a)                 # longueur
+sum(a), min(a), max(a)
+
+# Méthodes principales
+a.append(4)            # Ajoute un élément
+a.extend([5, 6])       # Ajoute plusieurs éléments
+a.insert(1, 10)        # Insère à l'index donné
+a.pop()                # Supprime et retourne le dernier
+a.remove(2)            # Supprime la première occurrence
+a.index(10)            # Index d'une valeur
+a.reverse()            # Inverse l'ordre
+a.buffer_info()        # Adresse mémoire et taille
+a.tolist()             # Conversion vers liste
+a.typecode  # Type des éléments ("i", "f", etc.)
+Typecodes courants :
+
+"i" : int (4 octets)
+
+"f" : float
+
+"d" : double
+
+"b" : int signé (1 octet)
+
+"B" : int non signé (1 octet)
+
+Idéal pour manipuler des millions de valeurs numériques tout en économisant de la mémoire 
+
+
+____ tuples = immuables (tuple) ____
+
+# Déclaration
+t = (1, 2, 3)
+t1 = (1,)  # un seul élément
+
+# Fonctions utiles
+len(t)
+min(t), max(t)
+tuple(iterable)
+
+# Méthodes disponibles
+t.index(x)
+t.count(x)
+Pas de .append(), .remove(), etc. car les tuples ne peuvent pas être modifiés.
+____ dictionnaire (dict) ____
+
+# Déclaration
+d = {"nom": "Alice", "âge": 25}
+
+# Fonctions utiles
+len(d)
+dict(liste_de_paires)  # conversion
+
+# Méthodes
+d.keys()           # vue des clés
+d.values()         # vue des valeurs
+d.items()          # vue des paires (clé, valeur)
+d.get("clé")       # valeur ou None
+d["clé"] = val     # ajout ou modif
+d.pop("clé")       # supprime et renvoie
+d.popitem()        # supprime une paire arbitraire
+d.update(autre)    # fusionne un autre dict
+d.clear()   # vide
+
+____ ensemble non ordonnes, sans doublons (set) ____
+# Déclaration
+s = {1, 2, 3}
+s = set([1, 2, 2, 3])  # conversion
+
+# Fonctions utiles
+len(s)
+set(iterable)
+sorted(s)
+
+# Méthodes
+s.add(x)              # ajoute un élément
+s.remove(x)           # retire (erreur si absent)
+s.discard(x)          # retire sans erreur
+s.pop()               # retire un élément arbitraire
+s.clear()
+s.union(s2)
+s.intersection(s2)
+s.difference(s2)
+s.symmetric_difference(s2)
