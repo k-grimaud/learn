@@ -1,0 +1,23 @@
+
+# Variables
+x = 10
+nom = "Alice"
+
+# Conditions
+if x > 0:
+    print("Positif")
+elif x == 0:
+    print("Zéro")
+else:
+    print("Négatif")
+
+# Boucles
+for i in range(5):
+    print(i)
+
+while x > 0:
+    x -= 1
+
+# Fonctions
+def saluer(nom):
+    return f"Bonjour {nom}"
